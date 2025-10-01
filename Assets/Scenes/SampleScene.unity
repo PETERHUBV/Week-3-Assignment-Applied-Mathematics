@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 430385980}
   - component: {fileID: 430385979}
+  - component: {fileID: 430385981}
   m_Layer: 0
   m_Name: Circle Player
   m_TagString: Player
@@ -206,6 +207,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &430385981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430385978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f383d881c3f7e45a1c7bbe8582d7bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &476892989
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 476892991}
   - component: {fileID: 476892990}
+  - component: {fileID: 476892992}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -293,6 +308,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &476892992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476892989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc04e23bec2f3914db2c585283a25660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  Lifetime: 5
+  hitDistance: 0.5
+  player: {fileID: 430385978}
 --- !u!1 &480738574
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2114374270}
   - component: {fileID: 2114374269}
+  - component: {fileID: 2114374271}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -688,6 +720,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2114374271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114374268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a1a41ce26afa848b3799013fe922a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 8
+  fireCooldown: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
